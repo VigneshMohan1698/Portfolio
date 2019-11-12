@@ -16,24 +16,40 @@
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-   
+        /*body {
+            background-image: url('resources/Selection_110.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }*/
         h2 {
-            color: cadetblue;
+            color: darkcyan;
+            font-weight: bold;
+            color:darkcyan;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
         .top-buffer {
             margin-top: 30px;
         }
+        p {
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            color: black;
+        }
 
         .jumbotron h2 {
             font-display:block;
-            color: cadetblue;
+            color:darkcyan;
         }
 
         .jumbotron {
             font-family:Arial, Helvetica, sans-serif;
-            position: relative;
-            background: rgba(50, 50, 155, 0.1);
+            position:relative;
+            
+            
             /*          background: rgba(36, 31, 155, 0.28) url("resources/ph600.png") center center;*/
             width: 100%;
             height: 100%;
@@ -46,7 +62,7 @@
    <div class="jumbotron">
         <div class="container">
             <h2>VIGNESH MOHAN'S PORTFOLIO</h2>
-            <p style="font-family:Arial, Helvetica, sans-serif;font-size:medium;color:black">
+            <p>
                 I am currently working as a software developer in Larsen & toubro infotech. Worked with .Net Development
                 and cloud technologies using Micorsoft Azure. Acquired good programming skills and working knowledge of Game development using Unity3D
                 game engine and 3D modelling and texturing using Autodesk Maya. Looking forward to a career in Game development and Design.
@@ -57,10 +73,10 @@
     <div class="container">
 
         <!-- First row of content -->
-        <div class="row-md-4">
+        <div class="row top-buffer">
 
             <div class="col-md-6">
-                <h2 style=" color:cadetblue; font-family:Arial, Helvetica, sans-serif">Resume</h2>
+                <h2>Resume</h2>
 
                 <p><a class="btn btn-default" href="resources/RESUME.pdf" role="button">View Resume (pdf) &raquo;</a></p>
                 <p><a class="btn btn-default" href="resources/RESUME.docx" role="button">Download Resume (docx) &raquo;</a></p>
@@ -71,89 +87,100 @@
 
             <div class="col-md-6">
                 <img class="img-responsive img-rounded" src="resources/ResumeSc.jpg">
+
+                </div>
             </div>
+            <!-- End of row 1 -->
+            <!-- Second row of content -->
+            <div class="row top-buffer">
+
+                <div class="col-md-6">
+                    <h2>.NET MVC Gaming Web Application</h2>
+                    <p>
+                        This was a project completed during my training at LTI. I along with 4 other trainees built a gaming web application similar
+                        Similiar to miniclip. It was built using .Net Framework version 4.7. Html and CSS was used for front-end development and
+                        SQL server 2015 was used as back-end database. It was a fully developed web application along with validations and verification
+                        of users with the database.
+                    </p>
+                    <p><a class="btn btn-default" href="https://github.com/profphillips/awssetup" role="button">View details &raquo;</a></p>
+                </div>
+
+                <div class="col-md-6">
+                    <img class="img-responsive img-rounded" src="resources/GamerHardore.jpg">
+                </div>
+            </div>
+            <!-- End of row 2 -->
+            <!-- Third row of content -->
+            <div class="row top-buffer">
+                <div class="col-md-6">
+                    <h2>Games in Web Application</h2>
+                    <p>
+                        In the Web application mentioned above I incorporated games. One of the games was a tic-tac-toe implemented
+                        using Artificial intelligence. It contained three levels. The first being a single player in which
+                        the computer made moves randomly. The second is a multiplayer level where 2 people could play the game. in the third level
+                        the computer made moves intelligently by the implementation of MiniMax artificial intelligence algorithm. The other game was
+                        a pong animation game created using Javascript.
+
+                    </p>
+                    <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
+                </div>
+
+                <div class="col-md-6">
+                    <video width="540" height="300" controls>
+                        <source src="resources/2019-11-12_22-52-54.mp4" type="video/mp4">
+                        </video>
+                        <!--<img class="img-responsive img-rounded" src="resources/desktop600.jpg">-->
+                </div>
+            </div>
+            <!-- End of row 3 -->
+            <!-- Fourth row of content -->
+            <div class="row top-buffer">
+
+                <div class="col-md-6">
+                    <h2>2D Tower Defense Game</h2>
+                    <p>
+                        This project was a part of my online course in Devslopes.com. It was a 2D tower defense game. It was created
+                        using Unity3D engine version 5.6. It involved Unity3D concepts like Raytracing and Pathfinding. C# was used a
+                        scripting language.
+                    </p>
+                    <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
+                </div>
+
+                <div class="col-md-6">
+                    <img class="img-responsive img-rounded" src="resources/Tower Defense.jpg">
+                </div>
+            </div>
+            <!-- End of row 4 -->
+            <!-- Fifth row of content - this time in 3 columns without screenshots -->
+            <div class="row top-buffer">
+                <div class="col-md-4">
+                    <h2>Other Application</h2>
+                    <p>Under development...</p>
+                    <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
+                </div>
+
+                <div class="col-md-4">
+                    <h2>Other Project</h2>
+                    <p>Under development...</p>
+                    <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
+                </div>
+
+                <div class="col-md-4">
+                    <h2>Future Project</h2>
+                    <p>Under development...</p>
+                    <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
+                </div>
+
+            </div>
+            <!-- End of row 5 -->
+
+            <hr>
+
+            <footer>
+                <p>This web page design is released to the public domain by John Phillips and you are free to use it as your own. It is built using the Bootstrap framework which has an MIT open source license. You may want to copyright your own variations to this web page by removing this message and adding your name to the following: &copy; 2016 Your Name Here</p>
+            </footer>
 
         </div>
-        <!-- End of row 1 -->
-        <!-- Second row of content -->
-        <div class="row top-buffer">
-
-            <div class="col-md-6">
-                <h2>.NET MVC Gaming Web Application</h2>
-                <p>This was a project completed during my training at LTI. I along with 4 other trainees built a gaming web application similar 
-                    Similiar to miniclip. It was built using .Net Framework version 4.7. Html and CSS was used for front-end development and 
-                    SQL server 2015 was used as back-end database. It was a fully developed web application along with validations and verification 
-                    of users with the database.
-                </p>
-                <p><a class="btn btn-default" href="https://github.com/profphillips/awssetup" role="button">View details &raquo;</a></p>
-            </div>
-
-            <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="resources/awscontrols600.jpg">
-            </div>
-        </div>
-        <!-- End of row 2 -->
-        <!-- Third row of content -->
-        <div class="row top-buffer">
-            <div class="col-md-6">
-                <h2>Games in Web Application</h2>
-                <p>In the Web application mentioned above I incorporated games. One of the games was a tic-tac-toe implemented
-                using MiniMax Artificial intelligence algorithm. The other was a pong animation game created using JavaScript.
-                </p>
-                <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
-            </div>
-
-            <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="resources/desktop600.jpg">
-            </div>
-        </div>
-        <!-- End of row 3 -->
-        <!-- Fourth row of content -->
-        <div class="row top-buffer">
-            <div class="col-md-6">
-                <h2>2D Tower Defense Game</h2>
-                <p>This project was a part of my online course in Devslopes.com. It was a 2D tower defense game. It was created
-                using Unity3D engine version 5.4. It involved Unity3D concepts like Raytracing and Pathfinding. C# was used a 
-                scripting language.
-                </p>
-                <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
-            </div>
-
-            <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="resources/ph600.jpg">
-            </div>
-        </div>
-        <!-- End of row 4 -->
-        <!-- Fifth row of content - this time in 3 columns without screenshots -->
-        <div class="row top-buffer">
-            <div class="col-md-4">
-                <h2>Other Application</h2>
-                <p>Under development...</p>
-                <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
-            </div>
-
-            <div class="col-md-4">
-                <h2>Other Project</h2>
-                <p>Under development...</p>
-                <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
-            </div>
-
-            <div class="col-md-4">
-                <h2>Future Project</h2>
-                <p>Under development...</p>
-                <p><a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a></p>
-            </div>
-
-        </div>
-        <!-- End of row 5 -->
-
-        <hr>
-
-        <footer>
-            <p>This web page design is released to the public domain by John Phillips and you are free to use it as your own. It is built using the Bootstrap framework which has an MIT open source license. You may want to copyright your own variations to this web page by removing this message and adding your name to the following: &copy; 2016 Your Name Here</p>
-        </footer>
-
-    </div>
     <!-- End of main content container -->
     <!-- Put the Javascript at the bottom -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
