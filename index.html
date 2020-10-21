@@ -1,8 +1,10 @@
-
+﻿
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,69 +18,112 @@
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-hr.new5 {
-  border: 2px solid black;
-  border-radius: 5px;
-}
-       body {
-            background-image: url('resources/AurogGame.jpg');
+        hr.new5 {
+            border: 2px solid black;
+            border-radius: 5px;
+            font-family: Roboto;
+            font-display: block;
+        }
+
+        body {
+            background-image: url('resources/Images/AurogFullBlurredBlackHue.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
             background-size: 100% 100%;
         }
+
         h2 {
             color: darkcyan;
             font-weight: bold;
-            color:darkcyan;
-            font-family:Arial, Helvetica, sans-serif;
+            font-display: block;
+            color: darkcyan;
+            font-family: Roboto;
+        }
+
+        h4 {
+            color: darkcyan;
+            font-weight: bold;
+            font-display: block;
+            color: darkcyan;
+            font-family: Roboto;
+        }
+
+        li {
+            border-color: whitesmoke;
+            font-display: block;
+            font-family: Roboto;
+            font-size: large;
+            color: white;
         }
 
         .top-buffer {
             margin-top: 30px;
-            
         }
-        p {
+
+        a {
+            background-image: black;
             border-color: whitesmoke;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: medium;
-            color: black;
+            font-family: Roboto;
+            font-size: large;
+            font-display: block;
+            color: white;
         }
-        .container{
-            
-            overflow:hidden;
+
+        p {
+            background-image: black;
+            border-color: whitesmoke;
+            font-family: Roboto;
+            font-size: large;
+            font-display: block;
+            color: white;
+        }
+
+        .container {
+            overflow: hidden;
         }
 
         .jumbotron h2 {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Roboto;
             font-display: block;
             color: darkcyan;
         }
 
         .jumbotron {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Roboto;
             position: relative;
-          
-            
             /*          background: rgba(36, 31, 155, 0.28) url("resources/ph600.png") center center;*/
             width: 100%;
             height: 100%;
             background-size: cover;
             overflow: hidden;
         }
+
+        p:hover {
+            background-color: darkcyan;
+            border-style: solid;
+            border-color: white;
+        }
+
+        li:hover {
+            background-color: darkcyan;
+            border-style: solid;
+            border-color: white;
+        }
     </style>
 </head>
 <body>
-   <div class="jumbotron">
-        <div class="container">
-            <h2>VIGNESH MOHAN'S PORTFOLIO</h2>
-            <p>
-                I am currently working as a software developer in Larsen & Toubro infotech. Worked with .Net Development
-                and cloud technologies using Micorsoft Azure. Acquired good programming skills and working knowledge of Game development using Unity3D
-                game engine and 3D modelling and texturing using Autodesk Maya. Looking forward to a career in Game development and Design.
-            </p>
-        </div>
-    <</div>
+    <!--<div class="jumbotron"> -->
+    <div class="container">
+        <h2>VIGNESH MOHAN'S PORTFOLIO</h2>
+        <p>
+            
+            I am currently working as a software developer in Larsen & Toubro infotech and as an part time Indie Game Developer. Worked with .Net Development
+            and cloud technologies using Micorsoft Azure. Acquired good programming skills and working knowledge of Game development using Unity3D
+            game engine and 3D modelling and texturing using Autodesk Maya. Looking forward to a career in Game development and Design.
+        </p>
+    </div>
+    <!-- <</div> -->
     <!-- This container holds the rest of the content -->
     <div class="container">
 
@@ -87,101 +132,183 @@ hr.new5 {
 
             <div class="col-md-6">
                 <h2>Resume</h2>
-		<p>A resume of my Career and Educational qualifications. Click below to view the entire Resume.</p>
-                <p><a class="btn btn-default" href="resources/RESUME.pdf" role="button">Click to View Full Resume (pdf) &raquo;</a></p>
-                <p><a class="btn btn-default" href="resources/RESUME.docx" role="button">Download Resume (docx) &raquo;</a></p>
+                <p>A resume of my Career and Educational qualifications. Click below to view the entire Resume.</p>
+                <a class="btn btn-default" href="resources/Documents/RESUME.pdf" role="button">Click to View Full Resume (pdf) &raquo;</a>
+                <a class="btn btn-default" href="resources/Documents/RESUME.docx" role="button">Download Resume (docx) &raquo;</a>
                 <p>
-            
+
                 </p>
             </div>
 
             <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="resources/FinalResumeSc.jpg">
+                <img class="img-responsive img-rounded" src="resources/Images/FinalResumeSc.jpg">
 
-                </div>
             </div>
-            <!-- End of row 1 -->
-            <!-- Second row of content -->
-            <div class="row top-buffer">
+        </div>
+        <!-- End of row 1 -->
+        <!-- Second row of content -->
+        <div class="row top-buffer">
 
-                <div class="col-md-6">
-                    <h2>.NET MVC Gaming Web Application</h2>
-                    <p>
-                        This was a project completed during my training at LTI. I along with 4 other trainees built a gaming web application similar
-                        to miniclip. It was built using .Net Framework version 4.7. Html and CSS was used for front-end development and
-                        SQL server 2015 was used as back-end database. It was a fully developed web application along with validations and verification
-                        of users with the database. Since it was a training project we used thumbnails with images of famous games. Click below to view the source code.
-                    </p>
-                    <p><a class="btn btn-default" href="https://github.com/VigneshMohan1698/Gaming-Web-Application" role="button">View details &raquo;</a></p>
-                </div>
-
-                <div class="col-md-6">
-                    <img class="img-responsive img-rounded" src="resources/GamerHardore.jpg">
-                </div>
+            <div class="col-md-6">
+                <h2>MAGISTICK : Multiplayer Ninja Fighting Game using Unity</h2>
+                <p>
+                    An indie game built using Unity Game Engine and Mirror networking(Equivalent to Unity HLAPI). It's a PVP multiplayer Game where Players
+                    can fight it out in a battle involving Kunai's and Swords. It contains a lobby system where players can queue and an Joystick for
+                    controlling the player. It involves an IAP purchasing option which is yet to come and will be released
+                    for android in the Play store soon. Check out the game in the link below.
+                </p>
+                <a class="btn btn-default" href="resources/Documents/Magistick.apk" role="button">Download APK &raquo;</a>
             </div>
-            <!-- End of row 2 -->
-            <!-- Third row of content -->
-            <div class="row top-buffer">
-                <div class="col-md-6">
-                    <h2>Games in Web Application</h2>
-                    <p>
-                        In the Web application mentioned above I incorporated games. One of the games was a tic-tac-toe implemented
-                        using Artificial intelligence. The computer made moves intelligently by the implementation of MiniMax artificial intelligence algorithm. This made it near impossible for the player to win the game. The other game was
-                        a pong animation game created using Javascript.  Click below to view the source code.
 
-                    </p>
-                    <p><a class="btn btn-default" href="https://github.com/VigneshMohan1698/WebApp-Games" role="button">View details &raquo;</a></p>
-                </div>
-
-                <div class="col-md-3">
-                    <video width="270" height="300" controls>
-                        <source src="resources/TicTacToe.mp4" type="video/mp4">
-                    </video>
-
-                </div>
-                <div class="col-md-3">
-                    <video width="270" height="300" controls>
-                        <source src="resources/Pong animation2 Game.mp4" type="video/mp4">
-                    </video>
-
-                </div>
+            <div class="col-md-3">
+                <img class="img-responsive img-rounded" src="resources/Images/Screenshot3.jpg">
             </div>
-            <!-- End of row 3 -->
-            <!-- Fourth row of content -->
-            <div class="row top-buffer">
-
-                <div class="col-md-6">
-                    <h2>2D Tower Defense Game</h2>
-                    <p>
-                        This project was a part of my online course in Devslopes.com. It was a 2D tower defense game. It was created
-                        using Unity3D engine version 5.6. It involved Unity3D concepts like Raytracing and Pathfinding. C# was used a
-                        scripting language.  Click below to view the source code.(Assets were provided by Devslopes from bitgem for training purposes.)
-                    </p>
-                    <p><a class="btn btn-default" href="https://github.com/VigneshMohan1698/Tower-Defense" role="button">View details &raquo;</a></p>
-                </div>
-
-                <div class="col-md-6">
-                    <img class="img-responsive img-rounded" src="resources/Tower Defense.jpg">
-                </div>
+            <div class="col-md-3">
+                <img class="img-responsive img-rounded" src="resources/Images/Screenshot2.jpg">
             </div>
-            <!-- End of row 4 -->
-            <!-- Fifth row of content - this time in 3 columns without screenshots -->
-     
-     
-
-         
-	  <hr class="new5">
-	
-	<footer>
-	<p> This page represents the portfolio of Vignesh Mohan. For any further information kindly email me at:                 vignesh.mohan.1698@gmail.com
-	</p>
-	</footer>
+            <div class="col-md-2">
+                <br />
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive img-rounded" src="resources/Images/Screenshot1.jpg">
+            </div>
 
         </div>
+        <!-- End of row 2 -->
+        <!--3 row-->
+        <div class="row top-buffer">
+
+            <div class="col-md-6">
+                <h2>3D Male Game Character</h2>
+                <p id="3DChar">
+                    I had always wanted to learn how 3D game characters in AAA titles where created. This model is a result of 30 hour course in Udemy which involved modelling in Autodesk Maya,
+                    Sculpting in Zbrush, Clothing in Marvelous Designer and Texturing in Substance painter. I learnt so much about 3D modelling and the hair was created using XGen in Maya.
+                    I rigged it and brought it into a 3D world which I had created in Unity (In the Background). Rigging and Gameplay controllers in Unity (under development).
+                </p>
+                <a class="btn btn-default" href="resources/Documents/Game Character Pipeline.pdf" role="button">View Certificate &raquo;</a>
+            </div>
+
+            <div class="col-md-6">
+                <!--<img class="img-responsive img-rounded" src="resources/TheGameCharacter2.jpg">-->
+                <video width="550" height="350" controls>
+                    <source src="resources/Videos/ZenroeTurnTable2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <!--  End of row 3-->
+        <!-- 4 row-->
+        <div class="row top-buffer">
+
+            <div class="col-md-6">
+                <h2>.NET MVC Gaming Web Application</h2>
+                <p>
+                    This was a project completed during my training at LTI. I along with 4 other trainees built a gaming web application similar
+                    to miniclip. It was built using .Net Framework version 4.7. Html and CSS was used for front-end development and
+                    SQL server 2015 was used as back-end database. It was a fully developed web application along with validations and verification
+                    of users with the database. Since it was a training project we used thumbnails with images of famous games. Click below to view the source code.
+                </p>
+               <a class="btn btn-default" href="https://github.com/VigneshMohan1698/Gaming-Web-Application" role="button">View Source code &raquo;</a>
+            </div>
+
+            <div class="col-md-6">
+                <img class="img-responsive img-rounded" src="resources/Images/GamerHardore.jpg">
+            </div>
+        </div>
+        <!--  End of row 4-->
+        <!-- 5 row of content -->
+        <div class="row top-buffer">
+            <div class="col-md-6">
+                <h2>Games in Web Application</h2>
+                <p>
+                    In the Web application mentioned above I had incorporated games. One of the games was a tic-tac-toe implemented
+                    using Artificial intelligence. The computer made moves intelligently by the implementation of MiniMax artificial intelligence algorithm. This made it near impossible for the player to win the game. The other game was
+                    a pong animation game created using Javascript. Click below to view the source code.
+
+                </p>
+                <a class="btn btn-default" href="https://github.com/VigneshMohan1698/WebApp-Games" role="button">View details &raquo;</a>
+            </div>
+
+            <div class="col-md-3">
+                <video width="270" height="300" controls>
+                    <source src="resources/Videos/TicTacToe.mp4" type="video/mp4">
+                </video>
+
+            </div>
+            <div class="col-md-3">
+                <video width="270" height="300" controls>
+                    <source src="resources/Videos/Pong animation2 Game.mp4" type="video/mp4">
+                </video>
+
+            </div>
+        </div>
+        <!-- End of row 5  -->
+        <!-- 6 row of content - this time in 3 columns without screenshots -->
+        <div class="row top-buffer">
+            <div class="col-md-4">
+                <h4>Game HUD Effects using After Effects</h4>
+                <p>Iron Man HUD effects</p>
+                <video width="300" height="200" controls>
+                    <source src="resources/Videos/Vicky Iron Man_1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Innovative Programmer Award.</h4>
+                <p>For developing Games in Web application.</p>
+                <!--<a class="btn btn-default" href="https://github.com/profphillips/s2employeedb" role="button">View details &raquo;</a>-->
+            </div>
+
+            <div class="col-md-4">
+                <h4>Small Projects and future Projects.</h4>
+                <p>
+                    <ul>
+                        <li>3D pokemon models using Maya.</li>
+                        <li>3D Game Project Using Unity Game Engine </li>
+                    </ul>
+                </p>
+                <video width="300" height="200" controls>
+                    <source src="resources/Videos/Pokemon TurnTable.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+        <!-- End of row 6 -->
+        <hr class="new5">
+
+        <footer>
+            <p>
+                This page represents the portfolio of Vignesh Mohan. For any further information kindly email me at:                 vignesh.mohan.1698@gmail.com
+            </p>
+        </footer>
+
+    </div>
     <!-- End of main content container -->
     <!-- Put the Javascript at the bottom -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        Document.onload = function () {
+            console.log("hello");
+            document.getElementById(
+                "3DChar").addEventListener(
+                    "mouseover", over);
+        }
+        Document.onload = function () {
+            document.getElementById(
+                "3DChar").addEventListener(
+                    "mouseout", out);
+        }
+
+        function over() {
+            //document.body.style.backgroundColor = "black";
+            document.body.style.backgroundImage = "url('resources/Images/Aurog.jpg')";
+            }
+
+            function out() {
+                document.body.style.backgroundImage = "url('resources/Images/AurogFullBlurredBlackHue.jpg')";
+            }
+        
+    </script>
 </body>
 </html>
 
